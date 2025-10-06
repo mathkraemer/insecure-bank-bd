@@ -117,4 +117,12 @@ public class ActivityController {
 		return "accountActivity";
 	}
 
+	int checkRange(String rangeValue){
+		if (null == rangeValue){
+			return Integer.parseInt(rangeValue.toLowerCase());
+		} else {
+			return -2;
+		}
+	}
+
 }
