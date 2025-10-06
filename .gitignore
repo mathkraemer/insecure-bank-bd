@@ -8,3 +8,6 @@ build.xml
 agent.config
 hdivAgentLog.hlg
 .vscode/
+
+# Black Duck
+.codesight
