@@ -20,7 +20,7 @@ public class Feature1 {
 
     public static int transform(String s){
         if (s == null)
-            return Integer.parseInt(s.toString());
+             return Integer.parseInt(s.toString());
         else
             return -1;
     }
@@ -41,7 +41,6 @@ public class Feature1 {
                 return rs.getString("Item");
             }
  */
-
     
     @RequestMapping("/check")
     public String check(@RequestParam String name) {
