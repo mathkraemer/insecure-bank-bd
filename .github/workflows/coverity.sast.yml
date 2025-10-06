@@ -23,9 +23,10 @@ jobs:
           coverity_url: ${{ vars.COVERITY_URL }}
           coverity_user: ${{ secrets.COVERITY_USER }}
           coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+          coverity_project_nmae: ${{ vars.COVERITY_PROJECT }} # default overwrite
                             
           ### Coverity Connect users - Uncomment below
-          coverity_install_directory: ${{ vars.COVERITY_INSTALLDIR }}  # not necessary in prod. env.
+          coverity_install_directory: ${{ vars.COVERITY_INSTALLDIR }}  # default overwrite
           coverity_local: true
           
           ### POLICY ENFORCEMENT: Uncomment to break build on policy
