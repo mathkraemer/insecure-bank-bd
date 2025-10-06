@@ -8,3 +8,7 @@ build.xml
 agent.config
 hdivAgentLog.hlg
 .vscode/
+
+
+# Coverity
+.codesight
