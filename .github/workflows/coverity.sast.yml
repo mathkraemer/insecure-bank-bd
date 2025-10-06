@@ -25,6 +25,7 @@ jobs:
           coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
                             
           ### Coverity Connect users - Uncomment below
+          coverity_install_directory: ${{ vars.COVERITY_INSTALLDIR }}  # not necessary in prod. env.
           coverity_local: true
           
           ### POLICY ENFORCEMENT: Uncomment to break build on policy
