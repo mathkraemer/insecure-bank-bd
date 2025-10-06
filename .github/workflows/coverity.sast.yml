@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-     - name: Coverity Scan
+      - name: Coverity Scan
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
           ### SCANNING: Required fields
@@ -25,10 +25,10 @@ jobs:
           coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
                             
           ### Coverity Connect users - Uncomment below
-          # coverity_local: true
+          coverity_local: true
           
           ### POLICY ENFORCEMENT: Uncomment to break build on policy
-          # coverity_policy_view: 'Outstanding Issues'
+          coverity_policy_view: 'Java Security Policy'
           
           ### PULL REQUEST COMMENTS:
           coverity_prComment_enabled: true
@@ -42,9 +42,9 @@ jobs:
           # mark_build_status: 'success'
                             
       ### Uncomment below configuration to add custom logic based on return status
-      - name: Coverity Scan Postprocessing
-         id: cmdLine
-         run: |
+      - name: Postprocessing
+        id: cmdLine
+        run: |
            EXIT_CODE=${{ steps.black-duck-security-scan.outputs.status }}
            echo "Black Duck Security Scan exit status - $EXIT_CODE"
 
