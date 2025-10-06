@@ -1,6 +1,9 @@
 capture:
-  build:
-    clean-command: mvn clean
+  #build:
+    #clean-command: mvn clean
     #build-command: mvn -B -DskipTests package
     #build-commnad: mvn -B -DskipTests -DskipITs clean install # default build-command-inference command for Maven projects
-    build-command: echo test
+  languages:
+    include:
+    - javascript
+    - configuration
