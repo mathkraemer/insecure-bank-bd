@@ -5,5 +5,6 @@ capture:
     #build-commnad: mvn -B -DskipTests -DskipITs clean install # default build-command-inference command for Maven projects
   languages:
     include:
+    - java
     - javascript
     - configuration
