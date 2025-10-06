@@ -38,7 +38,7 @@ jobs:
           ## by impact. Default is High if unset
           ## NOTE: Issues matching coverity_policy_view are ignored if set
           coverity_prComment_impacts: 'High,Medium,Low,Audit'
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Required when PR comments is enabled 
+          github_token: ${{ secrets.GH_TOKEN }} # Required when PR comments is enabled 
                             
           ### Mark build status if policy violating issues are found
           # mark_build_status: 'success'
