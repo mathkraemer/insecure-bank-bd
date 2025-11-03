@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Coverity Scan
-        uses: blackduck-inc/black-duck-security-scan@v2
+        uses: blackduck-inc/black-duck-security-scan@v2.6
         with:
           ### SCANNING: Required fields
           coverity_url: ${{ vars.COVERITY_URL }}
