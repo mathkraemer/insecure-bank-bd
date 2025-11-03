@@ -117,7 +117,7 @@ public class ActivityController {
 		return "accountActivity";
 	}
 
-	public void feature-2-report(Object activity){
+	public void feature_2_report(Object activity){
 		if (activity == null){
 			System.out.println(activity.toString());
 		}
