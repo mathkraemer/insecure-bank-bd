@@ -117,4 +117,10 @@ public class ActivityController {
 		return "accountActivity";
 	}
 
+	public void feature-2-report(Object activity){
+		if (activity == null){
+			System.println(activity.toString());
+		}
+	}
+
 }
