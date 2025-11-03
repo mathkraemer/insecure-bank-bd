@@ -119,7 +119,7 @@ public class ActivityController {
 
 	public void feature-2-report(Object activity){
 		if (activity == null){
-			System.println(activity.toString());
+			System.out.println(activity.toString());
 		}
 	}
 
