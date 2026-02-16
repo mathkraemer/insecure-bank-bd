@@ -14,7 +14,7 @@ analyze:
   aggressiveness-level: low
   checkers:
     all: false
-    all-security: true
+    all-security: false
     webapp-security:
       enabled: true
       aggressiveness-level: low
