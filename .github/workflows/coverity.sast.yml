@@ -1,4 +1,4 @@
-name: Synopsys Coverity SAST Scanning
+name: Coverity SAST Scan
 
 on:
   push:
