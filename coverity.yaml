@@ -3,8 +3,22 @@ capture:
     clean-command: mvn clean
     build-command: mvn -B -DskipTests package
     #build-commnad: mvn -B -DskipTests -DskipITs clean install # default build-command-inference command for Maven projects
-  # languages:
-  #   include:
-  #   - java
-  #   - javascript
-  #   - configuration
+  languages:
+    include:
+   - java
+   - javascript
+   - configuration
+  security-da: false
+
+analyze:
+  aggressiveness-level: low
+  checkers:
+    all: false
+    all-security: true
+    webapp-security:
+      enabled: true
+      aggressiveness-level: low
+
+
+
+
