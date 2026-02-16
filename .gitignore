@@ -9,7 +9,8 @@ agent.config
 hdivAgentLog.hlg
 .vscode/
 
+# Black Duck
+.codesight/
+.bridge/
+idir/
 
-# Coverity
-.codesight
-.bridge
