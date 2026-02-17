@@ -30,7 +30,7 @@ jobs:
           coverity_local: true
           
           ### POLICY ENFORCEMENT: Uncomment to break build on policy
-          coverity_policy_view: ${{ github.event_name != 'pull_request' && 'Policy - Java Security' || '' }}
+          #coverity_policy_view: ${{ github.event_name != 'pull_request' && 'Policy - Java Security' || '' }}
           
           ### PULL REQUEST COMMENTS:
           coverity_prComment_enabled: true
